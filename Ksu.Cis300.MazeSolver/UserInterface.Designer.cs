@@ -36,9 +36,10 @@
             // 
             this.uxNew.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.uxNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxNew.Location = new System.Drawing.Point(222, 396);
+            this.uxNew.Location = new System.Drawing.Point(444, 762);
+            this.uxNew.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.uxNew.Name = "uxNew";
-            this.uxNew.Size = new System.Drawing.Size(130, 33);
+            this.uxNew.Size = new System.Drawing.Size(260, 63);
             this.uxNew.TabIndex = 5;
             this.uxNew.Text = "New Maze";
             this.uxNew.UseVisualStyleBackColor = true;
@@ -49,19 +50,22 @@
             this.uxMaze.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.uxMaze.Location = new System.Drawing.Point(12, 12);
+            this.uxMaze.Location = new System.Drawing.Point(24, 23);
+            this.uxMaze.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.uxMaze.Name = "uxMaze";
             this.uxMaze.PathColor = System.Drawing.SystemColors.Highlight;
-            this.uxMaze.Size = new System.Drawing.Size(550, 378);
+            this.uxMaze.Size = new System.Drawing.Size(1100, 727);
             this.uxMaze.TabIndex = 4;
+            this.uxMaze.MouseClick += new System.Windows.Forms.MouseEventHandler(this.uxMaze_MouseClick);
             // 
             // UserInterface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 441);
+            this.ClientSize = new System.Drawing.Size(1148, 848);
             this.Controls.Add(this.uxNew);
             this.Controls.Add(this.uxMaze);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UserInterface";
             this.Text = "Maze Solver";
             this.ResumeLayout(false);
